@@ -7,27 +7,11 @@
     <title>Abhishek Kanojia - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<script>
-    // script.js
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.getElementById('menu-toggle');
-            const mainNav = document.getElementById('main-nav');
 
-            menuToggle.addEventListener('click', function () {
-                mainNav.classList.toggle('active');
-            });
-        });
-
-</script>
 <body>
     <header>
         <h1 class="logo">Abhishek Kanojia</h1>
-        <button class="menu-toggle" id="menu-toggle">
-            <span class="menu-icon"></span>
-            <span class="menu-icon"></span>
-            <span class="menu-icon"></span>
-        </button>
-        <nav class="main-nav" id="main-nav">
+        <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -213,8 +197,7 @@
                         card dataset.</li>
                 </ul>
                 <div class="learn-more">
-                    <a href="https://github.com/Abhitator216/Credit-Card-Fraud-Detection" target="_blank"
-                        class="learn-more">Learn
+                    <a href="https://github.com/Abhitator216/Credit-Card-Fraud-Detection" target="_blank" class="learn-more">Learn
                         More</a>
                 </div>
             </div>
@@ -222,9 +205,9 @@
 
         <div class="internship-card">
             <div class="experience-details">
-
+        
                 <h3 class="company-date">Other Projects </h3>
-
+        
                 <p class="company"><strong>Tech Stack Used </strong> : HTML,CSS,JavaScript,PHP,Node js </p>
                 <ul class="description">
                     <li>Tic-Tac-Toe Game </li>
@@ -239,57 +222,57 @@
                 </div>
             </div>
         </div>
-
+        
     </section>
 
     <section id="certificates" class="certificates-card card">
         <!-- Certificates  -->
-        <div id="certificates" class="experience-card card">
-            <h2>Certifications</h2>
-            <div class="internship-card">
-                <div class="experience-details">
-
-                    <h3 class="company-date"> Generative AI - Basics and Applications </h3>
-                    <div class="learn-more">
-                        <a href="https://www.coursera.org/account/accomplishments/certificate/TYM49DMARHWM"
-                            target="_blank" class="learn-more">Learn More</a>
-                    </div>
+    <div id="certificates" class="experience-card card">
+        <h2>Certifications</h2>
+        <div class="internship-card">
+            <div class="experience-details">
+        
+                <h3 class="company-date"> Generative AI - Basics and Applications </h3>
+                <div class="learn-more">
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/TYM49DMARHWM"
+                        target="_blank" class="learn-more">Learn More</a>
                 </div>
             </div>
-            <div class="internship-card">
-                <div class="experience-details">
+        </div>
+        <div class="internship-card">
+            <div class="experience-details">
 
-                    <h3 class="company-date">Azure Fundamentals certification, Microsoft Azure</h3>
-                    <div class="learn-more">
-                        <a href="https://www.credly.com/badges/7dbdb8d0-c79c-4d36-a899-7a6b0f75d1fd" target="_blank"
-                            class="learn-more">Learn More</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="internship-card">
-                <div class="experience-details">
-
-                    <h3 class="company-date"> SQL for Data Analysis Certified by Linkedin</h3>
-                    <div class="learn-more">
-                        <a href="https://www.linkedin.com/learning/certificates/9328c1d71063762e8fda8126d8ec18d71e2b9ee072878f3ef72ee4cbf6ea7670?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B8V41IMmrR2mMA9ziZfTpRA%3D%3D"
-                            target="_blank" class="learn-more">Learn More</a>
-                    </div>
+                <h3 class="company-date">Azure Fundamentals certification, Microsoft Azure</h3>
+                <div class="learn-more">
+                    <a href="https://www.credly.com/badges/7dbdb8d0-c79c-4d36-a899-7a6b0f75d1fd"
+                    target="_blank" class="learn-more">Learn More</a>
                 </div>
             </div>
-            <div class="internship-card">
-                <div class="experience-details">
-
-                    <h3 class="company-date"> Natural Language Processing Certified by Linkedin</h3>
-                    <div class="learn-more">
-                        <a href="https://www.linkedin.com/learning/certificates/fe21d8bc9f1c575f677197e849f3568a1f2646e7a40ca86973e026a88b5b4013"
-                            target="_blank" class="learn-more">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
 
         </div>
+        <div class="internship-card">
+            <div class="experience-details">
+
+                <h3 class="company-date"> SQL for Data Analysis Certified by Linkedin</h3>
+                <div class="learn-more">
+                    <a href="https://www.linkedin.com/learning/certificates/9328c1d71063762e8fda8126d8ec18d71e2b9ee072878f3ef72ee4cbf6ea7670?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B8V41IMmrR2mMA9ziZfTpRA%3D%3D"
+                    target="_blank" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="internship-card">
+            <div class="experience-details">
+
+                <h3 class="company-date"> Natural Language Processing Certified by Linkedin</h3>
+                <div class="learn-more">
+                    <a href="https://www.linkedin.com/learning/certificates/fe21d8bc9f1c575f677197e849f3568a1f2646e7a40ca86973e026a88b5b4013"
+                    target="_blank" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
     </section>
 
     <section id="awards" class="honours-card card">
@@ -297,19 +280,18 @@
             <h2>Honors & Awards</h2>
             <div class="internship-card">
                 <div class="experience-details">
-
-                    <p class="myclass">Selected in Innovation Design and Leadership Bootcamp organized by the Ministry
-                        of
+        
+                    <p class="myclass">Selected in Innovation Design and Leadership Bootcamp organized by the Ministry of
                         Education and All India Council for Technical Education</p>
                     <!-- <div class="learn-more">
                             <a href="#" class="learn-more">Learn More</a>
                         </div> -->
                 </div>
-
+        
             </div>
             <div class="internship-card">
                 <div class="experience-details">
-
+        
                     <p class="myclass"> Mentoring Sessions at IIITN, Mumbai Guided 200+ Freshers for Data Structures and
                         Algorithms and Mentored 50+ students in a Coaching Institute</p>
                     <!-- <div class="learn-more">
@@ -319,9 +301,8 @@
             </div>
             <div class="internship-card">
                 <div class="experience-details">
-
-                    <p class="myclass">Secured 1124 rank in LeetCode Biweekly Contest 99 out of 21264 Participants .
-                        </p3>
+        
+                    <p class="myclass">Secured 1124 rank in LeetCode Biweekly Contest 99 out of 21264 Participants .</p3>
                         <!-- <div class="learn-more">
                             <a href="#" class="learn-more">Learn More</a>
                         </div> -->
@@ -329,14 +310,14 @@
             </div>
             <div class="internship-card">
                 <div class="experience-details">
-
+        
                     <p class="myclass">Over 1000 problems solved on various Online Coding Platforms</p>
                     <!-- <div class="learn-more">
                             <a href="#" class="learn-more">Learn More</a>
                         </div> -->
                 </div>
             </div>
-
+        
         </div>
     </section>
 
@@ -349,7 +330,7 @@
                     <!-- <p><strong>Phone:</strong> 9082419386 -->
                     <p>
                 </div>
-
+        
             </div>
             <div class="internship-card">
                 <div class="experience-details">
