@@ -1,372 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek Kanojia - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Kanojia — Quant Developer</title>
+  <meta name="description" content="Quant Developer at Pace Stock Broking. Building low-latency C++ trading strategies, ML-driven portfolio optimization, and production research infrastructure." />
+  <meta name="theme-color" content="#07090d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<script>
-    // script.js
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.getElementById('menu-toggle');
-            const mainNav = document.getElementById('main-nav');
-
-            menuToggle.addEventListener('click', function () {
-                mainNav.classList.toggle('active');
-            });
-        });
-
-</script>
 <body>
-    <header>
-        <h1 class="logo" style = 'text-align: center;'>Abhishek Kanojia</h1>
-        <button class="menu-toggle" id="menu-toggle">
-            <span class="menu-icon"></span>
-            <span class="menu-icon"></span>
-            <span class="menu-icon"></span>
-        </button>
-        <nav class="main-nav" id="main-nav">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#awards">Honours</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about" class="about">
-        <div class="card-row">
-            <div class="about-card card">
-                <h2>About Me</h2>
-                <p>
-                    I am Abhishek Kanojia, a Computer Science and Engineering graduate from the Indian Institute of
-                    Information Technology Nagpur. Driven by a passion for leveraging technology to solve complex
-                    problems and create innovative solutions, I have accumulated diverse experiences in the tech
-                    industry.
-                </p>
-                <ul class="points">
-                    <li>As an SDE Intern at Juspay Technologies in Bangalore, I optimized data flow and storage
-                        efficiency with Kafka pipelines and ClickHouse integrations using Rust. I also developed Grafana
-                        dashboards and improved system functionality through advanced error handling.</li>
-                    <li>My previous role as a Quant Intern at Pace Stock Broking Services involved developing a
-                        recommendation system for stock market trends and conducting extensive backtesting for
-                        derivative strategies, leveraging Python and C++.</li>
-                    <li>My journey began as a Data Scientist Intern at Upvote Entertainment in South Korea, where I
-                        developed a Music Emotion Recognition Model with 86% accuracy and built a personalized
-                        recommendation system.</li>
-                    <li>As a Freelance Full Stack Developer at TCA in Hong Kong, I created a responsive movie ticket
-                        platform using Django and AWS, focusing on performance and user experience.</li>
-                    <li>I hold certifications in Generative AI, Natural Language Processing, SQL for Data Analysis, and
-                        Azure Fundamentals, reflecting my commitment to continuous learning and technical excellence.
-                    </li>
-                    <li>My dedication to growth is further demonstrated through my mentoring of over 200 students,
-                        competitive coding achievements, and active participation in leadership and innovation programs.
-                    </li>
-                </ul>
-            </div>
-            <div class="photo-card card">
-                <img src="new_abhi1.jpg" alt="Abhishek Kanojia" />
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="skills-card card">
-        <h2>Skills</h2>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-dot"></span>
+        <span>abhishek.kanojia</span>
+      </a>
+      <nav>
         <ul>
-            <li><strong>Programming Languages:</strong> C, C++, Python, Rust, Java, JavaScript, PHP, SQL, Haskell</li>
-            <li><strong>Libraries/Frameworks:</strong> TensorFlow, Langchain, Django, ReactJs, Node.js, Stemmer,
-                FastAPI, Cypress</li>
-            <li><strong>Tools/Platforms:</strong> GitHub, AWS, Ubuntu, Azure, GCP, Kubernetes, Docker, Grafana, Postman
-            </li>
-            <li><strong>Coursework:</strong> DSA, Deep Learning, Data Science, Distributed Computing, CN, DBMS,
-                Operating Systems, Cloud Computing, Machine Learning, NLP, CV</li>
-            <li><strong>Databases:</strong> ClickHouse, PostgreSQL, MySQL, Kafka</li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">≡</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <span class="eyebrow">Quant Developer · New Delhi</span>
+          <h1 class="hero-title">Building low-latency<br/>trading systems.</h1>
+          <p class="hero-sub">
+            Currently at <strong>Pace Stock Broking</strong>, translating Python research into production C++ for live F&amp;O trading. Previously SDE at <strong>Juspay</strong>, ML at <strong>Upvote</strong>, full-stack at <strong>TCA Hong Kong</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn-cv" href="Abhishek_Kanojia_Resume.pdf" download>
+              <span class="icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+              </span>
+              <span>
+                Download CV
+                <span class="meta" style="display:block; margin-top:2px;">PDF · Updated 2026</span>
+              </span>
+            </a>
+
+            <div class="socials">
+              <a class="social-pill" href="https://github.com/Abhitator216" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.1c-3.2.7-3.87-1.36-3.87-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18.92-.26 1.91-.39 2.9-.39s1.98.13 2.9.39c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .3.21.67.8.55C20.21 21.39 23.5 17.07 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+                GitHub
+              </a>
+              <a class="social-pill" href="https://www.linkedin.com/in/abhishek-kanojia-ai/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+                LinkedIn
+              </a>
+              <a class="social-pill" href="https://leetcode.com/abhitator007/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.48 1.27a2.04 2.04 0 0 1 2.88 0l7.37 7.37a2.04 2.04 0 0 1 0 2.88l-7.37 7.37a2.04 2.04 0 1 1-2.88-2.88l5.93-5.93-5.93-5.93a2.04 2.04 0 0 1 0-2.88zM4.7 11.31a2.04 2.04 0 0 1 2.88 0l5.04 5.04a2.04 2.04 0 1 1-2.88 2.88L4.7 14.19a2.04 2.04 0 0 1 0-2.88z" opacity=".55"/><path d="M2 12a2.04 2.04 0 0 1 2.04-2.04h13.2a2.04 2.04 0 1 1 0 4.08H4.04A2.04 2.04 0 0 1 2 12z"/></svg>
+                LeetCode
+              </a>
+            </div>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="label">Annualized Return</div>
+              <div class="val pos">+25.58%</div>
+              <div class="hint">Live MFT strategy · Pace</div>
+            </div>
+            <div class="stat">
+              <div class="label">Max Drawdown</div>
+              <div class="val neg">-1.43%</div>
+              <div class="hint">Market-neutral, options-based</div>
+            </div>
+            <div class="stat">
+              <div class="label">CGPA</div>
+              <div class="val">8.8<span style="color:var(--text-dim); font-size:18px;">/10</span></div>
+              <div class="hint">B.Tech CSE · IIIT Nagpur</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <div class="frame">
+            <img src="new_abhi1.jpg" alt="Abhishek Kanojia" />
+          </div>
+          <div class="tag"><span>●</span> open to research collab</div>
+        </div>
+      </div>
     </section>
 
-    <section id="experience" class="experience-card card">
-        <h2>Experience</h2>
-        <div class="internship-card">
-            <div class="experience-details">
-                <h3 class="company-date">Juspay Technologies Private Limited, Bangalore <span class="date">April '24 -
-                        Aug '24</span></h3>
-                <p class="company"><strong>SDE Intern</strong></p>
-                <ul class="description">
-                    <li>Implemented Kafka pipelines and ClickHouse database integrations in Rust, optimizing data flow
-                        and storage efficiency.</li>
-                    <li>Created a versioned Grafana dashboard and established alert rules for monitoring production
-                        infrastructure.</li>
-                    <li>Integrated error handling mechanisms and implemented audit events, tenant configurations, and
-                        bug fixes for improved system functionality.</li>
-                    <li>Developed Rust endpoints for data retrieval and metrics extraction from PostgreSQL, and enhanced
-                        API testing with Postman and Cypress Automation.</li>
-                </ul>
-                <div class="learn-more">
-                    <a href="https://www.linkedin.com/posts/abhishek-kanojia-ai_juspay-sde-activity-7188614273982500865-G_Z4?utm_source=share&utm_medium=member_desktop"
-                        target="_blank" class="learn-more">Learn More</a>
-                </div>
-            </div>
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Experience</h2>
+          <span class="rule"></span>
+          <span class="index"><span>01</span> / work</span>
         </div>
 
-        <div class="internship-card">
-            <div class="experience-details">
-                <h3 class="company-date">Pace Stock Broking Services, New Delhi <span class="date">Dec '23 - Mar
-                        '24</span></h3>
-                <p class="company"><strong>Quant Intern</strong></p>
-                <ul class="description">
-                    <li>Developed a recommendation system using advanced ML algorithms for identifying stock market
-                        trends.</li>
-                    <li>Conducted extensive backtesting for derivative market strategies, leveraging Python and C++.
-                    </li>
-                    <li>Managed and maintained quantitative and derivatives databases, ensuring data accuracy and
-                        accessibility.</li>
-                </ul>
-                <div class="learn-more">
-                    <a href="https://www.linkedin.com/posts/abhishek-kanojia-ai_quantintern-highfrequencytrading-financetechnology-activity-7146752190357946368-GntI?utm_source=share&utm_medium=member_desktop"
-                        target="_blank" class="learn-more">Learn More</a>
-                </div>
+        <div class="timeline">
+          <article class="job current">
+            <div class="job-head">
+              <h3>Pace Stock Broking Services</h3>
+              <div class="job-meta">Oct 2024 — Present</div>
             </div>
-        </div>
+            <p class="job-role">Quant Developer <span class="sep">·</span> <span class="loc">New Delhi, India</span></p>
+            <ul>
+              <li>Developed a <strong>market-neutral C++ MFT strategy</strong> using option Greeks and strike-selection models for dynamic F&amp;O position management.</li>
+              <li>Translated Python research into low-latency, production C++ strategies for live trading.</li>
+              <li>Architected a production-ready <strong>MCP-based research server</strong>, securely operationalizing company IP through strategy tools and dynamic resources.</li>
+              <li>Achieved <strong>25.58% annualized return</strong> with a maximum drawdown of <strong>-1.43%</strong>, delivering strong risk-adjusted performance.</li>
+              <li>Built quantitative options-selling models targeting high Sharpe ratios, leveraging ML for alpha generation and adaptive risk control.</li>
+            </ul>
+          </article>
 
-        <div class="internship-card">
-            <div class="experience-details">
-                <h3 class="company-date">Upvote Entertainment, South Korea <span class="date">May '23 - Jul '23</span>
-                </h3>
-                <p class="company"><strong>Data Scientist Intern</strong></p>
-                <ul class="description">
-                    <li>Developed a Music Emotion Recognition Model using Random Forest with an accuracy of 86%.</li>
-                    <li>Implemented music genre classification with CNN and built a content-based recommendation system.
-                    </li>
-                    <li>Optimized server performance with FastAPI for concurrent image generation, handling high user
-                        loads efficiently.</li>
-                </ul>
-                <div class="learn-more">
-                    <a href="https://www.linkedin.com/posts/abhishek-kanojia-ai_datascience-internshipjourney-machinelearning-activity-7094712953244950529-J6Hc?utm_source=share&utm_medium=member_desktop"
-                        target="_blank" class="learn-more">Learn More</a>
-                </div>
+          <article class="job">
+            <div class="job-head">
+              <h3>Pace Stock Broking Services</h3>
+              <div class="job-meta">Dec 2023 — Mar 2024</div>
             </div>
-        </div>
+            <p class="job-role">Quant Intern <span class="sep">·</span> <span class="loc">New Delhi, India</span></p>
+            <ul>
+              <li>Designed an <strong>ML-driven portfolio optimization</strong> framework to align strategy-level dynamics and improve capital allocation across variants.</li>
+              <li>Conducted large-scale backtesting of options strategies in Python, evaluating performance via risk-return metrics and parameter sweeps.</li>
+            </ul>
+          </article>
 
-        <div class="internship-card">
-            <div class="experience-details">
-                <h3 class="company-date">TCA, Hong Kong <span class="date">Dec '22 - Feb '23</span></h3>
-                <p class="company"><strong>Full Stack Developer Freelance</strong></p>
-                <ul class="description">
-                    <li>Developed a responsive movie ticket platform using Django, RestAPI, AWS, and MySQL.</li>
-                    <li>Implemented a real-time ticket cancellation mechanism and dynamic pricing system to enhance user
-                        experience.</li>
-                    <li>Engineered backend with MySQL, user authentication, and AWS deployment.</li>
-                </ul>
-                <div class="learn-more">
-                    <a href="https://github.com/Abhitator216/TCA_HK_Movies_Ticketing" target="_blank"
-                        class="learn-more">Learn More</a>
-                </div>
+          <article class="job">
+            <div class="job-head">
+              <h3>Juspay Technologies</h3>
+              <div class="job-meta">Apr 2024 — Sept 2024</div>
             </div>
+            <p class="job-role">SDE Intern <span class="sep">·</span> <span class="loc">Bangalore, India</span></p>
+            <ul>
+              <li>Built and optimized data pipelines using <strong>Rust, Kafka, ClickHouse, and PostgreSQL</strong>; improved API reliability, observability, and production stability with Grafana, Postman, and Cypress.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="job-head">
+              <h3>Upvote Entertainment</h3>
+              <div class="job-meta">May 2023 — Jul 2023</div>
+            </div>
+            <p class="job-role">Data Scientist Intern <span class="sep">·</span> <span class="loc">Remote</span></p>
+            <ul>
+              <li>Built ML models including an <strong>86%-accurate Music Emotion Recognizer</strong>, a CNN genre classifier, and a content-based recommender; optimized backend with FastAPI.</li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="job-head">
+              <h3>TCA HongKong</h3>
+              <div class="job-meta">Dec 2022 — Feb 2023</div>
+            </div>
+            <p class="job-role">Full Stack Developer · Freelance <span class="sep">·</span> <span class="loc">Remote</span></p>
+            <ul>
+              <li>Built a responsive movie ticket platform using <strong>Django, REST API, AWS, and MySQL</strong>; enabled real-time ticket cancellation and ensured robust backend design and performance.</li>
+            </ul>
+          </article>
         </div>
+      </div>
     </section>
 
-    <section id="project" class="experience-card card">
-        <h2>Projects/Open Source</h2>
-        <div class="internship-card">
-            <div class="experience-details">
-                <h3 class="company-date">Advance Conversational AI VishwaGuru</h3>
-                <p class="company"><strong>Tech Stack Used:</strong> LLMs (llama 2), Pinecone, Django, GPT-4</p>
-                <ul class="description">
-                    <li>Developed a prototype using Django and advanced Retrieval Augmentation Generation for a
-                        Conversational LLM-powered app.</li>
-                    <li>Ongoing fine-tuning of open source LLMs with the QLoRa Technique.</li>
-                </ul>
-                <div class="learn-more">
-                    <a href="https://github.com/Abhitator216/Chat_with_Bhagvadgeeta" target="_blank"
-                        class="learn-more">Learn More</a>
-                </div>
-            </div>
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Skills</h2>
+          <span class="rule"></span>
+          <span class="index"><span>02</span> / stack</span>
         </div>
 
-        <div class="internship-card">
-            <div class="experience-details">
-                <h3 class="company-date">Advance Calculator</h3>
-                <p class="company"><strong>Tech Stack Used:</strong> C++, OOPS</p>
-                <ul class="description">
-                    <li>Implemented addition and subtraction of unlimited digits using pure low-level coding in C++.
-                    </li>
-                </ul>
-                <div class="learn-more">
-                    <a href="https://github.com/horizon3902/Unlimited-Integer" target="_blank" class="learn-more">Learn
-                        More</a>
-                </div>
+        <div class="skill-grid">
+          <div class="skill-card">
+            <h4>Domains</h4>
+            <div class="chips">
+              <span class="chip">Fundamental Analysis</span>
+              <span class="chip">Financial ML</span>
+              <span class="chip">Options · Greeks</span>
+              <span class="chip">Market Microstructure</span>
             </div>
-        </div>
+          </div>
 
-        <div class="internship-card">
-            <div class="experience-details">
-                <h3 class="company-date">Credit Card Fraud Detection Project</h3>
-                <p class="company"><strong>Tech Stack Used:</strong> ML Algorithms, Python</p>
-                <ul class="description">
-                    <li>Implemented various machine learning algorithms to detect fraudulent transactions in a credit
-                        card dataset.</li>
-                </ul>
-                <div class="learn-more">
-                    <a href="https://github.com/Abhitator216/Credit-Card-Fraud-Detection" target="_blank"
-                        class="learn-more">Learn
-                        More</a>
-                </div>
+          <div class="skill-card">
+            <h4>Languages</h4>
+            <div class="chips">
+              <span class="chip">C++</span>
+              <span class="chip">C</span>
+              <span class="chip">Python</span>
+              <span class="chip">Rust</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">ClickHouse</span>
+              <span class="chip">MySQL</span>
             </div>
-        </div>
+          </div>
 
-        <div class="internship-card">
-            <div class="experience-details">
-
-                <h3 class="company-date">Other Projects </h3>
-
-                <p class="company"><strong>Tech Stack Used </strong> : HTML,CSS,JavaScript,PHP,Node js </p>
-                <ul class="description">
-                    <li>Tic-Tac-Toe Game </li>
-                    <li>Calculator using js </li>
-                    <li>Birthday App in Java</li>
-                    <li>File Organiser in Nodejs</li>
-                    <li>Photo Gallery App</li>
-                    <li>Flipkart Clone in PHP</li>
-                </ul>
-                <div class="learn-more">
-                    <a href="https://github.com/chiraggarg890/CAkart" target="_blank" class="learn-more">Learn More</a>
-                </div>
+          <div class="skill-card">
+            <h4>Frameworks &amp; Tools</h4>
+            <div class="chips">
+              <span class="chip">Django</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">LangChain</span>
+              <span class="chip">TensorFlow</span>
+              <span class="chip">Kafka</span>
+              <span class="chip">WebSocket</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Cypress</span>
+              <span class="chip">Grafana</span>
             </div>
-        </div>
+          </div>
 
+          <div class="skill-card">
+            <h4>Currently exploring</h4>
+            <div class="chips">
+              <span class="chip">MCP servers</span>
+              <span class="chip">Agentic research</span>
+              <span class="chip">Adaptive risk control</span>
+              <span class="chip">Alpha generation</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="certificates" class="certificates-card card">
-        <!-- Certificates  -->
-        <div id="certificates" class="experience-card card">
-            <h2>Certifications</h2>
-            <div class="internship-card">
-                <div class="experience-details">
-
-                    <h3 class="company-date"> Generative AI - Basics and Applications </h3>
-                    <div class="learn-more">
-                        <a href="https://www.coursera.org/account/accomplishments/certificate/TYM49DMARHWM"
-                            target="_blank" class="learn-more">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="internship-card">
-                <div class="experience-details">
-
-                    <h3 class="company-date">Azure Fundamentals certification, Microsoft Azure</h3>
-                    <div class="learn-more">
-                        <a href="https://www.credly.com/badges/7dbdb8d0-c79c-4d36-a899-7a6b0f75d1fd" target="_blank"
-                            class="learn-more">Learn More</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="internship-card">
-                <div class="experience-details">
-
-                    <h3 class="company-date"> SQL for Data Analysis Certified by Linkedin</h3>
-                    <div class="learn-more">
-                        <a href="https://www.linkedin.com/learning/certificates/9328c1d71063762e8fda8126d8ec18d71e2b9ee072878f3ef72ee4cbf6ea7670?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B8V41IMmrR2mMA9ziZfTpRA%3D%3D"
-                            target="_blank" class="learn-more">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="internship-card">
-                <div class="experience-details">
-
-                    <h3 class="company-date"> Natural Language Processing Certified by Linkedin</h3>
-                    <div class="learn-more">
-                        <a href="https://www.linkedin.com/learning/certificates/fe21d8bc9f1c575f677197e849f3568a1f2646e7a40ca86973e026a88b5b4013"
-                            target="_blank" class="learn-more">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
-
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Education</h2>
+          <span class="rule"></span>
+          <span class="index"><span>03</span> / school</span>
         </div>
+
+        <div class="edu-card">
+          <div class="edu-left">
+            <h3>IIIT Nagpur</h3>
+            <p>Bachelor of Technology · Computer Science Engineering</p>
+          </div>
+          <div class="edu-right">
+            <span class="cgpa">8.8 / 10</span>
+            Dec 2020 — Jul 2024 · Nagpur, India
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="awards" class="honours-card card">
-        <div id="awards" class="experience-card card">
-            <h2>Honors & Awards</h2>
-            <div class="internship-card">
-                <div class="experience-details">
-
-                    <p class="myclass">Selected in Innovation Design and Leadership Bootcamp organized by the Ministry
-                        of
-                        Education and All India Council for Technical Education</p>
-                    <!-- <div class="learn-more">
-                            <a href="#" class="learn-more">Learn More</a>
-                        </div> -->
-                </div>
-
-            </div>
-            <div class="internship-card">
-                <div class="experience-details">
-
-                    <p class="myclass"> Mentoring Sessions at IIITN, Mumbai Guided 200+ Freshers for Data Structures and
-                        Algorithms and Mentored 50+ students in a Coaching Institute</p>
-                    <!-- <div class="learn-more">
-                            <a href="#" class="learn-more">Learn More</a>
-                        </div> -->
-                </div>
-            </div>
-            <div class="internship-card">
-                <div class="experience-details">
-
-                    <p class="myclass">Secured 1124 rank in LeetCode Biweekly Contest 99 out of 21264 Participants .
-                        </p3>
-                        <!-- <div class="learn-more">
-                            <a href="#" class="learn-more">Learn More</a>
-                        </div> -->
-                </div>
-            </div>
-            <div class="internship-card">
-                <div class="experience-details">
-
-                    <p class="myclass">Over 1000 problems solved on various Online Coding Platforms</p>
-                    <!-- <div class="learn-more">
-                            <a href="#" class="learn-more">Learn More</a>
-                        </div> -->
-                </div>
-            </div>
-
+    <!-- AWARDS & CERTS -->
+    <section id="awards">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Awards &amp; Certifications</h2>
+          <span class="rule"></span>
+          <span class="index"><span>04</span> / recognition</span>
         </div>
+
+        <div class="split">
+          <div class="list-card">
+            <h3>Awards</h3>
+            <ul>
+              <li><span>Ranked <strong>Top 20</strong> · Bihar Innovation Challenge for the Conversational AI prototype <strong>VishwaGuru</strong>.</span></li>
+              <li><span>Mentored <strong>200+ freshers</strong> and <strong>50+ students</strong> bootstrapping real trade programs.</span></li>
+              <li><span>Selected for the Innovation, Design &amp; Leadership Bootcamp by the Ministry of Education / AICTE.</span></li>
+            </ul>
+          </div>
+
+          <div class="list-card">
+            <h3>Certifications</h3>
+            <ul>
+              <li><span><strong>NISM Series VIII</strong> · Equity Derivatives</span></li>
+              <li><span><strong>Generative AI with LLMs</strong> · Coursera</span></li>
+              <li><span><strong>Azure Fundamentals</strong> · Microsoft</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="contact-card card">
-        <div id="contact" class="experience-card card">
-            <h2>Contact Me</h2>
-            <div class="internship-card">
-                <div class="contact-details">
-                    <p><strong>Email:</strong> kanojiaabhishek2023@gmail.com</p>
-                    <!-- <p><strong>Phone:</strong> 9082419386 -->
-                    <p>
-                </div>
-
-            </div>
-            <div class="internship-card">
-                <div class="experience-details">
-                    <div class="profile-links">
-                        <a href="https://github.com/Abhitator216" target="_blank">GitHub</a>
-                        <a href="https://leetcode.com/abhitator007/" target="_blank">LeetCode</a>
-                        <a href="https://www.linkedin.com/in/abhishek-kanojia-ai/" target="_blank">LinkedIn</a>
-                    </div>
-                </div>
-            </div>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-card">
+          <h2>Let's build something.</h2>
+          <p>Open to quant research collaborations, low-latency systems work, and the occasional good conversation about market microstructure.</p>
+          <a class="contact-email" href="mailto:kanojiaabhishek2023@gmail.com">kanojiaabhishek2023@gmail.com</a>
         </div>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2024 Abhishek Kanojia</p>
-    </footer>
+  <footer>
+    <div class="wrap foot-inner">
+      <span>© 2026 Abhishek Kanojia · Built in the open.</span>
+      <span>
+        <a href="https://github.com/Abhitator216" target="_blank" rel="noopener">github</a> ·
+        <a href="https://www.linkedin.com/in/abhishek-kanojia-ai/" target="_blank" rel="noopener">linkedin</a> ·
+        <a href="mailto:kanojiaabhishek2023@gmail.com">email</a>
+      </span>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const nav = document.getElementById('nav');
+      const toggle = document.getElementById('menuToggle');
+      toggle?.addEventListener('click', () => nav.classList.toggle('open'));
+      nav.querySelectorAll('a[href^="#"]').forEach(a =>
+        a.addEventListener('click', () => nav.classList.remove('open'))
+      );
+    });
+  </script>
 </body>
-
 </html>
